@@ -14,7 +14,7 @@
                         <apex:inputtext value="{!firstUnitMinDamage}"/>
                 </apex:panelGrid>
 
-				<apex:panelGrid columns="2">
+			<apex:panelGrid columns="2">
                         <apex:outputText value="SecondFirst unit name: "/>
                         <apex:inputtext value="{!secondUnitName}"/>
                         <apex:outputText value="First unit health: "/>
