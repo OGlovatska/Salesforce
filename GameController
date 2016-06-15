@@ -1,0 +1,35 @@
+public class GameController {
+    
+    public String firstUnitName{get;set;}
+    public String secondUnitName{get;set;}
+    
+    public Double firstUnitHealth{get;set;}
+    public Double secondUnitHealth{get;set;}
+    
+    public Integer firstUnitMaxDamage{get;set;}
+    public Integer secondUnitMaxDamage{get;set;}
+    
+    public Integer firstUnitMinDamage{get;set;}
+    public Integer secondUnitMinDamage{get;set;}
+      
+    public Unit winner{get;set;}
+    public String winnerName{get;set;}
+    
+        public PageReference startGame(){
+        Unit firstUnit = new Unit(firstUnitName, firstUnitHealth, firstUnitMaxDamage, firstUnitMinDamage);
+        Unit secondUnit = new Unit(secondUnitName, secondUnitHealth, secondUnitMaxDamage, secondUnitMinDamage);
+        
+        Game game = new Game();
+        winner = game.fight(firstUnit, secondUnit);
+                               
+        return null;
+    }
+    
+    public void setWinnerName(){
+        winnerName = this.winner.getName();
+    }
+    
+    public String getWinnerName(){
+        return winnerName;
+    }
+}
