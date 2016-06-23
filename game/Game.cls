@@ -27,11 +27,11 @@ public class Game
                  secondAttack = secondUnit.attack();
                  if(!(firstDeffence.equals(secondAttack)))
                      
-             	/** 
+               /** 
              	* Check if first Unit blocked kicks of second. 
              	* If he does - he doesn't losse health. 
-				* If he doesn't - health of first Unit getting lower on value 
-				* of average damage of second Unit
+	        * If he doesn't - health of first Unit getting lower on value 
+		* of average damage of second Unit
              	*/
                  {
                     firstUnit.setHealth(firstUnit.health - secondUnit.averageDamage());
@@ -57,11 +57,11 @@ public class Game
                  secondDeffence = secondUnit.deffence();
                  firstAttack = firstUnit.attack();
                   
-             	/** 
+               /** 
              	* Check if second Unit blocked kicks of first. 
              	* If he does - he doesn't losse his health. 
-				* If he doesn't - health of second Unit getting lower on value 
-				* of average damage of first Unit
+		* If he doesn't - health of second Unit getting lower on value 
+		* of average damage of first Unit
              	*/
                  if(!(secondDeffence.equals(firstAttack)))
                  {
