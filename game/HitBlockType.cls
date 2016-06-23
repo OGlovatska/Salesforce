@@ -1,6 +1,6 @@
 public enum HitBlockType 
 {
-	HEAD,
+    HEAD,
     CHEST,
     HAND,
     LEG
