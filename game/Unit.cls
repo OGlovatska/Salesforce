@@ -52,7 +52,7 @@ public class Unit
 		return averageDamage;
 	}
     
-    /**
+	 /**
   	 * Method returns a value of body part which was attacked by Unit
   	 */
     public HitBlockType attack()
@@ -75,7 +75,7 @@ public class Unit
         return hitPlace;
     }
 
-    /**
+    	/**
   	 * Method returns a value of body part which was deffended by Unit
   	 */    
     public HitBlockType deffence()
