@@ -30,9 +30,9 @@ public class GameControllerObject {
 	}
     
     /*
-	 * Method used to fill wrapList with Units. 
-	 * If Unit's LoosDate__c less than 1 day before today it's not displayed in the choosinglist
-	 */
+     * Method used to fill wrapList with Units. 
+     * If Unit's LoosDate__c less than 1 day before today it's not displayed in the choosinglist
+     */
     public void selectUnitsFromDataBase()
     {
         unitWrapList = new List<UnitWrap>();
@@ -46,8 +46,8 @@ public class GameControllerObject {
 	}
     
     /*
-	 * Method for coosing first player from Database
-	 */
+     * Method for coosing first player from Database
+     */
     public void chooseFirstPlayer()
     {
         for(UnitWrap item: unitWrapList)
@@ -64,9 +64,9 @@ public class GameControllerObject {
          }
      }
     
-    /*
-	 * Method for coosing second player from Database
-	 */
+   /*
+    * Method for coosing second player from Database
+    */
     public void chooseSecondPlayer()
     {
         for(UnitWrap item: unitWrapList)
@@ -93,10 +93,10 @@ public class GameControllerObject {
     }
     
     /*
-	 * Method for saving results of the game. If player was choosen from Database it updates it's fields.
-	 * If players were inserted by user it inserts them to database. For winner this method increment quantity
-	 * of winns, for looser it sets value for loos date - today.
-	 */
+     * Method for saving results of the game. If player was choosen from Database it updates it's fields.
+     * If players were inserted by user it inserts them to database. For winner this method increment quantity
+     * of winns, for looser it sets value for loos date - today.
+     */
     public void savePlayers()
     {
         first.Name = firstUnit.name;
@@ -138,9 +138,9 @@ public class GameControllerObject {
     }
     
     /*
-	 * Wrapper class. Constructor takes as parameters Unit__c 
-	 * and boolean value to check if Unit was selected in checkbox
-	 */
+     * Wrapper class. Constructor takes as parameters Unit__c 
+     * and boolean value to check if Unit was selected in checkbox
+     */
     public class UnitWrap
     {
         public Unit__c player{get;set;}
