@@ -21,7 +21,7 @@ public class GameObject
         secondUnit.maxDamage = (Integer)first.MaxDamage__c;
         secondUnit.minDamage = (Integer)first.MinDamage__c;
         
-		gameLog = new List<String>();
+	gameLog = new List<String>();
         HitBlockType firstAttack;
         HitBlockType secondAttack;
         HitBlockType firstDeffence;
@@ -30,10 +30,10 @@ public class GameObject
     	while(true)
     	{
     		
-            /** 
-             * Check if both Units' health higher then 0. 
-             * If it does second Unit strikes first Unit
-             */
+        /** 
+         * Check if both Units' health higher then 0. 
+         * If it does second Unit strikes first Unit
+         */
     		if (firstUnit.health > 0 && secondUnit.health > 0)
     		 {
                  firstDeffence = firstUnit.deffence();
@@ -43,8 +43,8 @@ public class GameObject
              	/** 
              	* Check if first Unit blocked kicks of second. 
              	* If he does - he doesn't losse his health. 
-				* If he doesn't - health of first Unit getting lower on value 
-				* of average damage of second Unit
+		* If he doesn't - health of first Unit getting lower on value 
+		* of average damage of second Unit
              	*/
                  {
                     firstUnit.setHealth(firstUnit.health - secondUnit.averageDamage());
@@ -73,8 +73,8 @@ public class GameObject
              	/** 
              	* Check if second Unit blocked kicks of first. 
              	* If he does - he doesn't losse his health. 
-				* If he doesn't - health of second Unit getting lower on value 
-				* of average damage of first Unit
+		* If he doesn't - health of second Unit getting lower on value 
+		* of average damage of first Unit
              	*/
                  if(!(secondDeffence == (firstAttack)))
                  {
