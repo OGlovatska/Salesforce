@@ -3,18 +3,18 @@ global class UnitSorter implements Comparable
     public Unit__c unit;
     
     /*
-	 * Constructor for UnitSorter class
-	 */
+     * Constructor for UnitSorter class
+     */
     public UnitSorter(Unit__c unit)
     {
         this.unit = unit;
     }
         
     /*
-	 * Compare units based on the winn amount
-	 */
-	public Integer compareTo(Object compareUnit) 
-	{
+     * Compare units based on the winn amount
+     */
+    public Integer compareTo(Object compareUnit) 
+    {
         UnitSorter compareToUnit = (UnitSorter) compareUnit;
         Integer returnValue = 0;
                         
@@ -26,5 +26,5 @@ global class UnitSorter implements Comparable
             returnValue = -1;
         }
         return returnValue;
-	}
+    }
 }
